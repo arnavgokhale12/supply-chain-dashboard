@@ -12,11 +12,11 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-from app.core.config import settings  # noqa: E402
-from app.db.base import Base  # noqa: E402
+from backend.app.core.config import settings  # noqa: E402
+from backend.app.db.base import Base  # noqa: E402
 # Import models here (NOT in Base) so metadata includes them
-from app.models.series import Series  # noqa: F401,E402
-from app.models.observation import Observation  # noqa: F401,E402
+from backend.app.models.series import Series  # noqa: F401,E402
+from backend.app.models.observation import Observation  # noqa: F401,E402
 
 target_metadata = Base.metadata
 

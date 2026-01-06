@@ -8,8 +8,8 @@ import requests
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.db.session import SessionLocal
-from app.models.observation import Observation
+from backend.app.db.session import SessionLocal
+from backend.app.models.observation import Observation
 
 LOCAL_SERIES_ID = "gscpi"
 NYFED_URL = "https://www.newyorkfed.org/medialibrary/research/interactives/gscpi/downloads/gscpi_data.csv"

@@ -2,8 +2,8 @@ from datetime import date
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
-from app.db.deps import get_db
-from app.models.observation import Observation
+from backend.app.db.deps import get_db
+from backend.app.models.observation import Observation
 
 router = APIRouter(prefix="/observations", tags=["observations"])
 

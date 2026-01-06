@@ -3,9 +3,9 @@ from datetime import date
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.db.session import SessionLocal
-from app.models.observation import Observation
-from app.services.fred import fetch_fred_series
+from backend.app.db.session import SessionLocal
+from backend.app.models.observation import Observation
+from backend.app.services.fred import fetch_fred_series
 
 FRED_SERIES_ID = "RETAILIRSA"
 LOCAL_SERIES_ID = "retailirsa"

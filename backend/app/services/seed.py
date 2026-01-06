@@ -1,5 +1,5 @@
-from app.db.session import SessionLocal
-from app.models.series import Series
+from backend.app.db.session import SessionLocal
+from backend.app.models.series import Series
 
 SEED_SERIES = [
     {

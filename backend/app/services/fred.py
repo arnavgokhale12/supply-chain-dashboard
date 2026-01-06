@@ -1,6 +1,6 @@
 from __future__ import annotations
 import requests
-from app.core.config import settings
+from backend.app.core.config import settings
 
 def fetch_fred_series(series_id: str) -> list[tuple[str, float]]:
     if not settings.fred_api_key:

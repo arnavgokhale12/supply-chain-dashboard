@@ -5,8 +5,8 @@ from datetime import date
 from sqlalchemy import Date, Float, ForeignKey, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from app.db.base import Base
-from app.models.series import Series
+from backend.app.db.base import Base
+from backend.app.models.series import Series
 
 
 class Observation(Base):

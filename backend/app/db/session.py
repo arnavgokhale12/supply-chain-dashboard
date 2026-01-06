@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from app.core.config import settings
+from backend.app.core.config import settings
 
 connect_args = {}
 if settings.database_url.startswith("sqlite"):

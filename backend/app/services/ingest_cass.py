@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from app.db.session import SessionLocal
-from app.models.observation import Observation
-from app.services.fred import fetch_fred_series
+from backend.app.db.session import SessionLocal
+from backend.app.models.observation import Observation
+from backend.app.services.fred import fetch_fred_series
 from datetime import datetime
 
 # Cass Freight Index via FRED

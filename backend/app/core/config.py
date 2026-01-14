@@ -5,6 +5,8 @@ class Settings(BaseSettings):
     app_name: str = "Supply Chain Stress Dashboard API"
     database_url: str
     fred_api_key: str | None = None
+    quandl_api_key: str | None = None
+    alpha_vantage_api_key: str | None = None
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 

@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     app_name: str = "Supply Chain Stress Dashboard API"
-    database_url: str
+    database_url: str = "sqlite:///./scdash.db"
     fred_api_key: str | None = None
     quandl_api_key: str | None = None
     alpha_vantage_api_key: str | None = None
